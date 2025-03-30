@@ -6,6 +6,12 @@ export default {
         colors: {  
           'brand-yellow': '#FFFA64',
         },
+        fontSize:{
+          'size-title': '2rem',
+        },
+        borderRadius:{
+          'default': '20px'
+        }
       },
     },
     plugins: [],
