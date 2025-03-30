@@ -4,11 +4,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <div class="p-4 flex flex-col justify-center items-center">
-    <img class="rounded-full w-[176px] h-[171px] object-cover object-[50%_30%]" src="./profile.jpeg" alt="" />
-    <div >
-      <h1 class="text-center mt-[40px]" >Hi, I am Vladys, Full-Stack Developer</h1>
-      <p class="text-center mt-4"> With a passion for building user-friendly apps. With an artistic background and an entrepreneurial spirit, I’m all about blending creativity with code!</p>
+    <img
+      class="rounded-full w-[176px] h-[171px] object-cover object-[50%_30%]"
+      src="./profile.jpeg"
+      alt=""
+    />
+    <div>
+      <h1 class="text-center mt-[50px]">
+        Hi, I am Vladys, Full-Stack Developer
+      </h1>
+      <p class="text-center mt-6">
+        With a passion for building user-friendly apps. With an artistic
+        background and an entrepreneurial spirit, I’m all about blending
+        creativity with code!
+      </p>
+      
+     
+    
     </div>
-    <button  class="mt-[40px]  bg-brand-yellow hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-default">Contact me!</button>
+    <button class="mt-[45px] bg-brand-yellow hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-default">
+      Contact me!</button>
+      <img class="p-4 mt-3" src="/arrow-down.svg" alt="">
+      <div class="border rounded-lg p-2 mt-6 w-[100%] ">
+        <p class="text-center">TECHNOLOGIES</p>
+        <h4 class="text-center font-bold">What I used to build this site</h4>
+        <div class="flex items-center justify-around mt-3 p-2">
+          <img class="w-[50px]" src="/html.svg" alt="html icon" />
+          <img class="w-[50px]" src="/css.svg" alt="css icon" />
+          <img class="w-[50px]" src="/astro.svg" alt="astro icon" />
+          <img class="w-[50px]" src="/tailwind.svg" alt="tailwind icon" />
+        </div>
+      </div>
   </div>
 </BaseLayout>
