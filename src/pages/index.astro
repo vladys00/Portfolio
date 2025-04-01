@@ -3,29 +3,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="p-4 flex flex-col justify-center items-center">
+  <div class="p-4 flex flex-col justify-center items-center lg:flex-row ">
     <img
-      class="rounded-full w-[176px] h-[171px] object-cover object-[50%_30%]"
+      class="rounded-full w-[176px] h-[176px] object-cover object-[50%_30%]  lg:w-[250px] lg:h-[250px] lg:mr-[35px] lg:mt-[30px] "
       src="./profile.jpeg"
       alt=""
     />
-    <div>
-      <h1 class="text-center mt-[50px]">
-        Hi, I am Vladys, Full-Stack Developer
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-center mt-[35px]">
+        Hi, I am Vladys <br /> <b>Full-Stack Developer</b>
       </h1>
-      <p class="text-center mt-6">
-        With a passion for building user-friendly apps, an artistic
-        background and an entrepreneurial spirit, I’m all about blending
-        creativity with code!
+      <p class="text-center mt-6 max-w-[600px]">
+        With a passion for building user-friendly apps, an artistic background
+        and an entrepreneurial spirit, I’m all about blending creativity with
+        code!
       </p>
-      
-     
-    
+
+      <a
+        href="mailto:vldk0022@gmail.com"
+        class="mt-[35px] bg-brand-yellow hover:bg-black hover:text-brand-yellow text-black font-semibold py-3 px-6 rounded-default"
+      >
+        Contact me!</a
+      >
     </div>
-    <a href="mailto:vldk0022@gmail.com" class="mt-[45px] bg-brand-yellow hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-default">
-      Contact me!</a>
-      <img class="p-4 mt-3" src="/arrow-down.svg" alt="">
-      <div class="border rounded-lg p-2 mt-6 w-[100%] ">
+    
+  </div>
+  <div class="p-6 flex flex-col justify-center items-center lg:mt-[70px] ">
+      <div class="border rounded-lg p-2 mt-6 w-[100%] md:w-[80%] lg:w-[70%]">
         <p class="text-center">TECHNOLOGIES</p>
         <h4 class="text-center font-bold">What I used to build this site</h4>
         <div class="flex items-center justify-around mt-3 p-2">
@@ -35,5 +39,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <img class="w-[50px]" src="/tailwind.svg" alt="tailwind icon" />
         </div>
       </div>
+
   </div>
 </BaseLayout>
+
+
