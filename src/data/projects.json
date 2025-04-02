@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "TDD",
-      "description": "An interactive platform that combines gaming, education, and real-world impact to make wildlife conservation accessible to everyone. 🐾 Allows users to create their own universe and populate it with their favorite animal companions. Features an engaging game where users earn points by completing conservation-related challenges and climb the leaderboard to be featured on the podium.",
+      "description": "An interactive platform that combines gaming, education, and real-world impact to make wildlife conservation accessible to everyone. 🐾 Users can create their own universe, populate it with favorite animal companions, and earn points through conservation challenges to climb the leaderboard.",
       "techStack": ["JavaScript", "MongoDB", "Express.js", "Node.js", "Handlebars.js"],
       "imageUrl": "/public/TDD.png",
       "githubRepo": "https://github.com/The-Dumb-Dodo/TDD-proyect",
@@ -20,7 +20,7 @@
     {
       "id": 3,
       "name": "2D Dodo Game",
-      "description": "An interactive platform that combines gaming, education, and real-world impact to make wildlife conservation accessible to everyone. 🐾 Users can create their own universe, populate it with favorite animal companions, and earn points through conservation challenges to climb the leaderboard.",
+      "description": "2D game to showcase my skills in DOM manipulation, HTML, and CSS, where players control a dodo bird to dodge predators, collect points, and answer fun trivia.",
       "techStack": ["HTML", "CSS", "JavaScript (DOM Manipulation)"],
       "imageUrl": "/public/Dodo-game.png",
       "githubRepo": "https://github.com/vladys00/project1-github-repo",
