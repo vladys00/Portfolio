@@ -21,10 +21,10 @@ import Document from "../assets/document.svg";
           <Gear class="w-[18px] me-1" />Tech Stack
         </div>
         <button class="drop-down">
-          <img class="w-[20px] me-3" src="/arrow-down.svg" alt="" /></button
+          <img class="w-[20px] me-3" src="/arrow-down.svg" alt="arrow down" /></button
         >
       </h4>
-      <ul id="tech-stack" class="hidden">{techStack.map((el: string) => <li>· {el}</li>)}</ul>
+      <ul id="tech-stack"  class="hidden">{techStack.map((el: string) => <li>· {el}</li>)}</ul>
     </div>
     <div class="break-words mt-1 lg:mt-4">
       <h4 class="flex items-center"><Link class="w-[15px] me-2" />Links</h4>
@@ -41,6 +41,7 @@ import Document from "../assets/document.svg";
 
 <script>
   document.querySelector('.drop-down')!.addEventListener('click', () => {
+    console.log("ckicked drowp down")
     document.querySelector('#tech-stack')!.classList.toggle('hidden');
   });
 </script>

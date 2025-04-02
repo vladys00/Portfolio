@@ -7,7 +7,7 @@ import Project from "../components/Project.astro";
 
 <BaseLayout>
     <div class="p-4   w-[100vw] grid flex flex-col items-center justify-center  gap-6  lg:items-start lg:p-[30px]">
-       {projects.map((project)=><Project name={project.name} description={project.description}
+       {projects.map((project)=><Project  name={project.name} description={project.description}
        techStack={project.techStack} githubRepo={project.githubRepo} imageUrl={project.imageUrl}
        liveDemo={project.liveDemo}/>)} 
     </div>
