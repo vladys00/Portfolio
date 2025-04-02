@@ -1,15 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import projects from "../data/projects.json"
-import Project from "../components/Project.astro";
+import Project from "../components/Project.jsx";
+import Test from "../components/Test.jsx"
 
 ---
 
 <BaseLayout>
     <div class="p-4   w-[100vw] grid flex flex-col items-center justify-center  gap-6  lg:items-start lg:p-[30px]">
-       {projects.map((project)=><Project  name={project.name} description={project.description}
+       {projects.map((project)=>(<Project client:only="react" name={project.name} description={project.description}
        techStack={project.techStack} githubRepo={project.githubRepo} imageUrl={project.imageUrl}
-       liveDemo={project.liveDemo}/>)} 
+              liveDemo={project.liveDemo}/>))} 
     </div>
 </BaseLayout>
 

@@ -7,6 +7,9 @@ import Document from "../assets/document.svg";
 ---
 
 <div class="p-3 border rounded-lg w-[340px] sm:w-auto lg:flex">
+  <div class="rounded-lg overflow-hidden mt-4 lg:w-[50%] lg:me-3">
+    <img src={imageUrl} alt="image of project" />
+  </div>
   <div class="p-2 lg:w-[50%]">
     <h2 class="font-bold">{name}</h2>
     <div class="break-words mt-1 lg:mt-4">
@@ -34,9 +37,7 @@ import Document from "../assets/document.svg";
       </ul>
     </div>
   </div>
-  <div class="rounded-lg overflow-hidden mt-4 lg:w-[50%] lg:ms-3">
-    <img src={imageUrl} alt="image of project" />
-  </div>
+  
 </div>
 
 <script>
