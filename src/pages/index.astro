@@ -4,7 +4,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <div
-    class="p-4 flex flex-col-reverse justify-center items-center lg:flex-row lg:pt-[50px]"
+  id="main-div"
+    class="p-2 flex flex-col-reverse justify-center items-center md:flex-row lg:pt-[50px]"
   >
   <img
   id="octocat"
@@ -12,7 +13,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   src="/myOctocat.png"
   alt="octocat image"
 />
-    <div class="flex flex-col justify-center items-center">
+    <div id="description-div" class="flex flex-col justify-center items-center">
      
       <h1 class="text-center font-semibold">
         Hi, I am Vladys <br />
@@ -27,7 +28,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         id="cta"
         href="mailto:vldk0022@gmail.com"
         class="mt-[35px] bg-brand-yellow hover:bg-black hover:text-brand-yellow text-black font-semibold py-3 px-6 rounded-default
-        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black-500 ..."
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black-500 ... "
       >
         Let's talk!</a
       >
@@ -66,16 +67,50 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
   #cta {
     position: absolute;
-    right: 30px;
+    right: 10%;
     top: 213px;
   }
-  @media (min-width: 420px) {
+  @media (min-width: 600px) {
+    #main-div{
+      flex-direction: row;
+      
+    }
+    h1{
+    font-size: 45px;
+   }
+   p{
+    font-size: 20px;
+   } 
+   a{
+    font-size:15px;
+   }
+   
     #octocat {
-      width: 500px;
+      width: 400px;
     }
     #cta {
-      position: static;
+      position:static;
     }
     
+  }
+  
+ 
+  @media (min-width:1000px){
+    h1{
+    font-size: 60px;
+   }
+   p{
+    font-size: 30px;
+   } 
+   a{
+    font-size:25px;
+   }
+   #octocat {
+      width: 600px;
+    }
+  
+    #cta{
+      position: static;
+    }
   }
 </style>
