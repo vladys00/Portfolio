@@ -13,11 +13,11 @@ function Project({
 }) {
   const [dropDown, useDropDown] = useState(false);
   return (
-    <div className=" w-[340px] sm:w-auto lg:flex">
-      <div className="rounded-lg overflow-hidden mt-4 lg:w-[50%] lg:me-3">
-        <img src={frontImage} alt="image of project" />
+    <div className=" w-[340px] sm:w-auto lg:w-[400px] ">
+      <div className="rounded-lg overflow-hidden mt-4 lg:w-[400px]">
+        <img  className="w-[400pxs]" src={frontImage} alt="image of project" />
       </div>
-      <div className="p-2 lg:w-[50%]">
+      <div className="p-2 ">
         <h2 className="font-bold">{name}</h2>
         <p className="mt-2">{shortDescription}</p>
       </div>
