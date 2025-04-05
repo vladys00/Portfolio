@@ -7,6 +7,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   id="main-div"
     class="p-2 flex flex-col-reverse justify-center items-center md:flex-row lg:pt-[50px]"
   >
+  <img id="word-grid" class="absolute top-[300px] opacity-50 lg:" src="/words-blur.png" alt="words collage">
   <img
   id="octocat"
   class="lg:w-[400px]"
@@ -33,6 +34,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         Let's talk!</a
       >
     </div>
+    
     
   </div>
   <!-- <div class="p-6 flex flex-col justify-center items-center lg:mt-[70px]">
@@ -105,8 +107,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
    a{
     font-size:25px;
    }
+   #word-grid{
+    top: 300px;
+    left: 356px;
+   }
    #octocat {
       width: 600px;
+      top:-37px;
     }
   
     #cta{
