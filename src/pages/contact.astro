@@ -3,9 +3,40 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="p-3 flex">
+  <div id="mobile" class="p-3 ">
+    <h1>Let's start a conversation.</h1>
+    <div >
+      <div class="flex">
+        <div>
+          <img src="/profile-blur.png" alt="profile">
+
+        </div>
+        <div class="w-[300px]">
+          <a
+            id="cta"
+            href="mailto:vldk0022@gmail.com"
+            class="mt-[35px] me-3 bg-brand-yellow hover:bg-black hover:text-brand-yellow text-black font-semibold py-3 px-6 rounded-default
+            transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black-500 ... "
+          >
+           Email me!</a>
+          
+        </div>
+        
+      </div>
+      <div>
+        <p>Have an exciting project you need help with? Send me an email or connect with me on social.</p>
+        <div>
+          <a href="">Linkedin</a>
+          <a href="">GitHub</a>
+          <a href="">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="big-screen" class="hidden p-3 flex ">
     <div class="flex justify-center items-center">
-      <img class="w-[500px]" src="/profile-blur.png" alt="">
+      <img class="w-[500px]" src="/profile-blur.png" alt="profile">
     </div>
     <div class="p-3 flex flex-col justify-center">
       <h1>Let's start a conversation</h1>
@@ -17,7 +48,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           class="mt-[35px] me-3 bg-brand-yellow hover:bg-black hover:text-brand-yellow text-black font-semibold py-3 px-6 rounded-default
           transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black-500 ... "
         >
-         Email me!</a
+         Email me!</a>
         <div>
           <a href="">Linkedin</a>
           <a href="">GitHub</a>
@@ -27,3 +58,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </div>
   </div>
 </BaseLayout>
+<style>
+  @media (min-width:700px){
+  #mobile{
+    display: none;
+  }
+  #big-screen{
+    display: flex;
+  }
+  }
+
+</style>
