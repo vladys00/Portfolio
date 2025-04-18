@@ -13,6 +13,7 @@ import Test from "../components/Test.jsx";
       projects.map((project) => (
         <Project
           client:only="react"
+          link={`/${project.slug}`}
           name={project.name}
           description={project.description}
           techStack={project.techStack}

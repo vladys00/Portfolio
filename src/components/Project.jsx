@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 function Project({
+  link,
   name,
   description,
   techStack,
@@ -14,7 +15,7 @@ function Project({
   const [dropDown, useDropDown] = useState(false);
   return (
     <div className=" w-[340px]  sm:w-auto lg:w-[400px] flex flex-col ">
-      <a href="/project-details" className="rounded-lg overflow-hidden mt-4 lg:w-[400px] relative w-full h-full group">
+      <a href={link} className="rounded-lg overflow-hidden mt-4 lg:w-[400px] relative w-full h-full group">
         <img  className="w-[400pxs] w-full h-full object-cover" src={frontImage} alt="image of project" />
         <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
       </a>
