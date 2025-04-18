@@ -14,9 +14,10 @@ function Project({
   const [dropDown, useDropDown] = useState(false);
   return (
     <div className=" w-[340px]  sm:w-auto lg:w-[400px] flex flex-col ">
-      <div className="rounded-lg overflow-hidden mt-4 lg:w-[400px]">
-        <img  className="w-[400pxs]" src={frontImage} alt="image of project" />
-      </div>
+      <a href="/project-details" className="rounded-lg overflow-hidden mt-4 lg:w-[400px] relative w-full h-full group">
+        <img  className="w-[400pxs] w-full h-full object-cover" src={frontImage} alt="image of project" />
+        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+      </a>
       <div className="p-2  ">
         <h2 className="font-bold">{name}</h2>
         <p className="pe-1 mt-1 w-[350px]">{shortDescription}</p>
