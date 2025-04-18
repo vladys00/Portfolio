@@ -1,29 +1,47 @@
 [
-    {
-      "id": 1,
-      "name": "Wild-Escape",
-      "description": "Wildlife Platform – The ‘Airbnb’ for Conservation 🌍🐾. A centralized platform that makes it easy to discover, book, and connect with conservation experiences worldwide, allowing users to engage directly with conservation sites.",
-      "techStack": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "Mongoose", "Bootstrap"],
-      "githubRepo": "https://github.com/orgs/Wild-Escape/repositories",
-      "imageUrl": "/wild-escape.png",
-      "liveDemo": "https://w-e-app.vercel.app/"
-    },
-    {
-      "id": 2,
-      "name": "TDD",
-      "description": "An interactive platform that combines gaming, education, and real-world impact to make wildlife conservation accessible to everyone. 🐾 Users can create their own universe, populate it with favorite animal companions, and earn points through conservation challenges to climb the leaderboard.",
-      "techStack": ["JavaScript", "MongoDB", "Express.js", "Node.js", "Handlebars.js"],
-      "imageUrl": "/TDD.png",
-      "githubRepo": "https://github.com/The-Dumb-Dodo/TDD-proyect",
-      "liveDemo": "https://tdd-proyect-dark-frog-7382.fly.dev/"
-    },
-    {
-      "id": 3,
-      "name": "2D Dodo Game",
-      "description": "2D game to showcase my skills in DOM manipulation, HTML, and CSS, where players control a dodo bird to dodge predators, collect points, and answer fun trivia.",
-      "techStack": ["HTML", "CSS", "JavaScript (DOM Manipulation)"],
-      "imageUrl": "/Dodo-game.png",
-      "githubRepo": "https://github.com/vladys00/project1-github-repo",
-      "liveDemo": "https://vladys00.github.io/project1-github-repo/"
-    }
-  ]
+  {
+    "id": 1,
+    "tags":["Full-stack development", "React", "JavaScript", "Node.js", "Express.js"],
+    "name": "Wild-Escape",
+    "slug":"wild-escape",
+    "folderName":"wild-escape-carousel",
+    "carouselImages":["1","2","3","4","5","6"],
+    "shortDescription":"A centralized hub to discover, book, and connect with conservation experiences around the world.",
+    "description": "Wildlife Platform – The ‘Airbnb’ for Conservation 🌍🐾. A centralized platform that makes it easy to discover, book, and connect with conservation experiences worldwide, allowing users to engage directly with conservation sites.",
+    "techStack": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "Mongoose", "Bootstrap"],
+    "githubRepo": "https://github.com/orgs/Wild-Escape/repositories",
+    "imageUrl": "/wild-escape.png",
+    "frontImage":"/wild-escape-gall.png",
+    "liveDemo": "https://w-e-app.vercel.app/"
+  },
+  {
+    "id": 2,
+    "tags":["Full-stack development", "JavaScript", "Bootstrap", "Node.js", "Express.js"],
+    "name": "TDD",
+    "slug":"TDD",
+    "folderName":"TDD-carousel",
+    "carouselImages":["1","2","3","4","5"],
+    "shortDescription":"An interactive platform that blends gaming, education, and real-world impact to make wildlife conservation accessible to everyone.",
+    "description": "An interactive platform that combines gaming, education, and real-world impact to make wildlife conservation accessible to everyone. 🐾 Users can create their own universe, populate it with favorite animal companions, and earn points through conservation challenges to climb the leaderboard.",
+    "techStack": ["JavaScript", "MongoDB", "Express.js", "Node.js", "Handlebars.js"],
+    "imageUrl": "/TDD.png",
+    "frontImage":"/TDD-gall.png",
+    "githubRepo": "https://github.com/The-Dumb-Dodo/TDD-proyect",
+    "liveDemo": "https://tdd-proyect-dark-frog-7382.fly.dev/"
+  },
+  {
+    "id": 3,
+    "name": "2D Dodo Game",
+    "slug":"Dodo-game",
+    "folderName":"game-carousel",
+    "carouselImages":["1","2","3"],
+    "tags":["Front-end development", "JavaScript", "DOM manipulation", "CSS", "HTML"],
+    "shortDescription":"Players control a dodo bird to dodge predators, collect points, and answer fun trivia.",
+    "description": "2D game to showcase my skills in DOM manipulation, HTML, and CSS, where players control a dodo bird to dodge predators, collect points, and answer fun trivia.",
+    "techStack": ["HTML", "CSS", "JavaScript (DOM Manipulation)"],
+    "imageUrl": "/Dodo-game.png",
+    "frontImage":"/dodo-game-gall.png",
+    "githubRepo": "https://github.com/vladys00/project1-github-repo",
+    "liveDemo": "https://vladys00.github.io/project1-github-repo/"
+  }
+]
