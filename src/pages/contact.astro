@@ -3,7 +3,36 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  <div class="p-3">
+  <div class="w-[100vw]  flex align-center justify-center ">
+    <form class="flex flex-col mt-3 pt-[100px] p-4 w-[400px] " action="https://formspree.io/f/mldjywad" method="POST">
+      <div>
+        <label class="flex flex-col ">
+          Name:
+          <input class="border rounded-md  mt-2" type="email" name="email" />
+        </label>
+        <label class="flex flex-col mt-2"> 
+          Surname :
+          <input class="border rounded-md  mt-2" type="email" name="email" />
+        </label>
+      </div>
+      <label class="flex flex-col mt-2">
+        Email:
+        <input class="border rounded-md  mt-2" type="email" name="email" />
+      </label>
+      <label class="flex flex-col mt-2">
+        Your message:
+        <textarea class="border rounded-md  mt-2 " name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+       <div class="flex align-center justify-center">
+        <button class="w-[150px] mt-[35px] bg-brand-yellow hover:bg-black hover:text-brand-yellow text-black font-semibold py-3 px-6 rounded-default
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black-500 ..." type="submit">Send</button>
+       </div>
+     
+    </form>
+  </div>
+</BaseLayout>
+<!-- <div class="p-3">
     <div>
       <h1 class="text-center font-bold lg:text-[45px]">
   Contact me 📬
@@ -29,5 +58,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <a class="rounded-full shadow p-1.5 link flex p4 w-[165px] mt-3 me-3  hover:text-sky-400 " href="https://www.linkedin.com/in/vladys-k00/"><img class="m-2 w-[30px]" src="/linkedin.svg" alt="linkedin logo"><p class="flex items-center text-[25px]">LinkedIn</p></a>
     <a class="rounded-full shadow p-1.5 link flex p4 w-[165px] mt-3 lg:me-3 hover:text-sky-400 " href="https://github.com/vladys00"><img class="m-2 w-[30px]" src="/github.svg" alt="github logo"><p class="flex items-center text-[25px]">GitHub</p></a>
     <a class="rounded-full shadow p-1.5 link flex p4 w-[165px] mt-3 lg:me-3 hover:text-sky-400" href="https://www.instagram.com/vladys_/"><img class="m-2 w-[30px]" src="/instagram.svg" alt="instagram logo"><p class="flex items-center text-[25px]">Instagram</p></a>
-  </div>
-</BaseLayout>
+  </div> -->
