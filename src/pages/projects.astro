@@ -13,6 +13,8 @@ import Test from "../components/Test.jsx";
       projects.map((project) => (
         <Project
           client:only="react"
+          folderName={project.folderName}
+          carouselImages={project.carouselImages}
           link={`/${project.slug}`}
           name={project.name}
           description={project.description}
